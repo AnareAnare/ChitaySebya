@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="./index.js"></script>
+    <title>CHITAY SEBYA</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navigation">
+                <div class="contacts">
+                    <div class="contacts__wrapper">
+                        <ul class="list-reset socials">
+                            <li class="socials__item">
+                                <a class="socials__link" href="" aria-label="Наша компания вконтакте">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.87822 8.87798C7.05884 10.6974 7.05884 13.6256 7.05884 19.4821V20.5174C7.05884 26.3739 7.05884 29.3022 8.87822 31.1216C10.6976 32.9409 13.6258 32.9409 19.4824 32.9409H20.5177C26.3742 32.9409 29.3024 32.9409 31.1218 31.1216C32.9412 29.3022 32.9412 26.3739 32.9412 20.5174V19.4821C32.9412 13.6256 32.9412 10.6974 31.1218 8.87798C29.3024 7.05859 26.3742 7.05859 20.5177 7.05859H19.4824C13.6258 7.05859 10.6976 7.05859 8.87822 8.87798ZM11.0407 15.0226C11.1862 21.8624 14.6781 25.9729 20.8002 25.9729H21.1472V22.0597C23.3969 22.2789 25.0979 23.8902 25.7806 25.9729H28.9593C28.0863 22.8599 25.7918 21.139 24.3592 20.4813C25.7918 19.6702 27.8064 17.6972 28.2876 15.0226H25.4C24.7733 17.1929 22.9156 19.166 21.1472 19.3523V15.0226H18.2596V22.6078C16.4688 22.1693 14.2081 20.0429 14.1074 15.0226H11.0407Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="" aria-label="Наша компания на дзен">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M22.4958 22.4956C20.4622 24.5939 20.3235 27.2099 20.1387 32.9409C25.4815 32.9409 29.1698 32.9225 31.074 31.0737C32.9227 29.1695 32.9412 25.3057 32.9412 20.1384C27.2101 20.3233 24.5941 20.462 22.4958 22.4956ZM19.8614 32.9409C14.5185 32.9409 10.8303 32.9225 8.92606 31.0737C7.07733 29.1695 7.05884 25.3057 7.05884 20.1384C12.7899 20.3233 15.4059 20.462 17.5042 22.4956C19.5378 24.5939 19.6765 27.2099 19.8614 32.9409ZM17.5042 17.504C15.4059 19.5376 12.7899 19.6762 7.05884 19.8611C7.05884 14.6939 7.07733 10.83 8.92606 8.92582C10.8303 7.07708 14.5277 7.05859 19.8614 7.05859C19.6765 12.7897 19.5378 15.4057 17.5042 17.504ZM20.1387 7.05859C20.3143 12.7897 20.4622 15.4057 22.4958 17.504C24.5941 19.5376 27.2101 19.6762 32.9412 19.8611C32.9412 14.6939 32.9227 10.83 31.074 8.92582C29.1698 7.07708 25.4815 7.05859 20.1387 7.05859Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="contacts__mail" href="mailto:chitaysebya@yandex.ru">chitaysebya@yandex.ru</a>
+                    </div>
+                    <div class="contacts__logo">
+                        <a class="contacts__link" href="#">
+                            <img src="./img/logo.png" alt="Логотип">
+                        </a>
+                    </div>
+                    <div>
+                        <button class="btn btn-transparent">
+                            Записаться
+                        </button>
+                    </div>
+
+                </div>
+                <nav class="nav">
+                    <ul class="list-reset nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Статьи
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="slides">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <div class="main-title">
+                                    Пакеты сессий по&nbsp;регрессионной терапии
+                                </div>
+                                <p class="text__descr">
+                                    Тем, кому интересна тема влияния прошлого опыта на&nbsp;варианты развития будущего
+                                </p>
+                                <div class="button-wrapper">
+                                    <button class="btn btn-colored">
+                                        Получить консультацию
+                                    </button>
+                                    <button class="btn btn-transparent btn-radius">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <div class="main-title">
+                                    Пакеты сессий по&nbsp;регрессионной терапии
+                                </div>
+                                <p class="text__descr">
+                                    Тем, кому интересна тема влияния прошлого опыта на&nbsp;варианты развития будущего
+                                </p>
+                                <div class="button-wrapper">
+                                    <button class="btn btn-colored">
+                                        Получить консультацию
+                                    </button>
+                                    <button class="btn btn-transparent btn-radius">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text">
+                                <div class="main-title">
+                                    Пакеты сессий по&nbsp;регрессионной терапии
+                                </div>
+                                <p class="text__descr">
+                                    Тем, кому интересна тема влияния прошлого опыта на&nbsp;варианты развития будущего
+                                </p>
+                                <div class="button-wrapper">
+                                    <button class="btn btn-colored">
+                                        Получить консультацию
+                                    </button>
+                                    <button class="btn btn-transparent btn-radius">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                        <svg width="222" height="24" viewBox="0 0 222 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M221.061 10.9393C221.646 11.5251 221.646 12.4749 221.061 13.0607L211.515 22.6066C210.929 23.1924 209.979 23.1924 209.393 22.6066C208.808 22.0208 208.808 21.0711 209.393 20.4853L217.879 12L209.393 3.51472C208.808 2.92893 208.808 1.97919 209.393 1.3934C209.979 0.807611 210.929 0.807611 211.515 1.3934L221.061 10.9393ZM0 10.5L220 10.5V13.5L0 13.5L0 10.5Z"
+                                fill="url(#paint0_linear_68_1694)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_68_1694" x1="220" y1="12" x2="0" y2="12"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="222" height="24" viewBox="0 0 222 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M221.061 10.9393C221.646 11.5251 221.646 12.4749 221.061 13.0607L211.515 22.6066C210.929 23.1924 209.979 23.1924 209.393 22.6066C208.808 22.0208 208.808 21.0711 209.393 20.4853L217.879 12L209.393 3.51472C208.808 2.92893 208.808 1.97919 209.393 1.3934C209.979 0.807611 210.929 0.807611 211.515 1.3934L221.061 10.9393ZM0 10.5L220 10.5V13.5L0 13.5L0 10.5Z"
+                                fill="url(#paint0_linear_68_1694)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_68_1694" x1="220" y1="12" x2="0" y2="12"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="benefits">
+            <div class="container">
+                <div class="benefits__contant">
+                    <div class="title">
+                        Преимущества
+                    </div>
+                    <ul class="list-reset benefits__list">
+                        <li class="benefits__item">
+                            <a href="#" class="benefits__link benefits__link-1">
+                                <div class="title benefits__title">
+                                    Индивидуальный подход
+                                </div>
+                                <p class="paragraph">
+                                    к&nbsp;каждому обратившемуся&nbsp;&mdash; расчеты вручную, без шаблонных
+                                    трактовок
+                                </p>
+                            </a>
+                        </li>
+                        <li class="benefits__item">
+                            <a href="#" class="benefits__link benefits__link-2">
+                                <div class="title benefits__title">
+                                    Провека спорных моментов
+                                </div>
+                                <p class="paragraph">
+                                    одновременно по&nbsp;нескольким эзотерическим направлениям для большей точности
+                                    ответа
+                                </p>
+                            </a>
+                        </li>
+                        <li class="benefits__item">
+                            <a href="#" class="benefits__link benefits__link-3">
+                                <div class="title benefits__title">
+                                    Возможность получения скидок
+                                </div>
+                                <p class="paragraph">
+                                    Возможность получения скидок на&nbsp;повторное обращение за&nbsp;консультацией
+                                </p>
+                            </a>
+                        </li>
+                        <li class="benefits__item">
+                            <a href="#" class="benefits__link benefits__link-4">
+                                <div class="title benefits__title">
+                                    Использование проверенных методик
+                                </div>
+                                <p class="paragraph">
+                                    Использование проверенных безопасных коучинговых и&nbsp;регрессионных методик
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container">
+                <div class="title services__title">
+                    Услуги
+                </div>
+                <ul class="list-reset services__list">
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services1.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services2.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services3.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services4.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services5.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services6.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services7.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            10 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <div class="services__img">
+                            <img src="./img/services8.webp" alt="Нумерология визуальное представление">
+                        </div>
+                        <p class="paragraph services__paragraph">
+                            5&nbsp;консультационных онлайн регрессионных сессий
+                        </p>
+                        <p class="paragraph paragraph-price">
+                            40 000 руб.
+                        </p>
+                        <button class="btn btn-transparent services__btn">
+                            Подробнее
+                        </button>
+                    </li>
+                </ul>
+                <div class="services__center">
+                    <button class="btn btn-colored">
+                        Все услуги
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="articles">
+            <div class="container">
+                <div class="articles__content">
+                    <div class="title">
+                        Статьи
+                    </div>
+                    <div class="articles__articles">
+                        <div class="articles__item">
+                            <a class="articles__link" href="">
+                                <article>
+                                    <div class="articles__img">
+                                        <img src="./img/articlesBig.webp"
+                                            alt="Метафорические карты. Мужчина и женщина смотрят друг на друга">
+                                    </div>
+                                    <div class="title articles__title">
+                                        КАРМИЧЕСКИЕ ЯКОРЯ
+                                    </div>
+                                    <p class="paragraph articles__paragraph">
+                                        Помимо общих кармических задач, человек может быть кармически связан
+                                        со&nbsp;своими
+                                        родными и&nbsp;близкими.
+                                    </p>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="articles__item item">
+                            <div class="item__mini">
+                                <a class="articles__link" href="">
+                                    <article class="item__article">
+                                        <div class="item__img">
+                                            <img src="./img/articlesMini1.webp"
+                                                alt="Метафорические карты.Изображение женщины">
+                                        </div>
+                                        <div class="item__text">
+                                            <div class="title item__title">
+                                                ЦВЕТА СИЛЫ
+                                            </div>
+                                            <p class="paragraph item__paragraph">
+                                                Что такое &laquo;мой цвет&raquo;? У&nbsp;каждого человека
+                                                в&nbsp;зависимости
+                                                от&nbsp;дня рождения есть &quot;свой цвет...
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                            <div class="item__mini">
+                                <a class="articles__link" href="">
+                                    <article class="item__article">
+                                        <div class="item__img">
+                                            <img src="./img/articlesMini2.webp"
+                                                alt="Метафорические карты.Изображены весы в виде женщины">
+                                        </div>
+                                        <div class="item__text">
+                                            <div class="title item__title">
+                                                СЛАДКОЕ СЛОВО&nbsp;&mdash; СВОБОДА
+                                            </div>
+                                            <p class="paragraph item__paragraph">
+                                                Как понять, что кармические долги отработаны? Ну&nbsp;или начали
+                                                отрабатываться?
+                                                Наблюдать и&nbsp;анализировать!
+                                            </p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__center">
+                        <button class="btn btn-colored">
+                            Читать все
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="container about-me__container">
+                <div class="title">
+                    Обо мне
+                </div>
+                <div class="about-me__contant">
+                    <div class="about-me__item">
+                        <a class="about-me__link" href="">
+                            <div class="about-me__link-blur">
+                            </div>
+                            <div class="title about-me__title">
+                                <span class="title__colored">Читай себя,</span> как самую увлекательную книгу
+                            </div>
+                            <p class="paragraph about-me__link-paragraph">
+                                с&nbsp;помощью ТАРО, НУМЕРОЛОГИИ, АСТРОЛОГИИ, РЕГРЕССОЛОГИИ И&nbsp;КОУЧИНГА!
+                            </p>
+                        </a>
+                        <p class="paragraph about-me__paragraph">
+                            Меня зовут Наталия Городенская, я&nbsp;психолог-регрессолог, коуч, нумеролог, таролог
+                            и&nbsp;астролог. Приветствую вас и&nbsp;предлагаю окунуться в&nbsp;удивительный мир познания
+                            себя!
+                        </p>
+                        <div class="button-padding">
+                            <button class="btn btn-transparent services__btn">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="about-me__item about-me__img">
+                        <img src="./img/about-me.jpg" alt="Наталия Городенская фото">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="any-questions">
+            <div class="container">
+                <div class="any-questions__content">
+                    <div class="any-questions__text">
+                        <div class="any-questions__title">
+                            Остались вопросы?
+                        </div>
+                        <div class="any-questions__title any-questions__title-mini">
+                            Напишите свой вопрос
+                        </div>
+                        <form id="form" action="">
+                            <div class="form__inputs">
+                                <label class="visually-hidden" for="name">Введите ваше имя</label>
+                                <input id="name" class="name" type="text" name="name" placeholder="Ваше имя" required>
+                                <label class="visually-hidden" for="tel">Введите ваш телефон</label>
+                                <input id="tel" class="tel" type="tel" name="tel" placeholder="+7(___)-___-__-__"
+                                    required>
+                            </div>
+                            <label class="label-descr">
+                                <span class="label-span">Опишите кратко ваш запрос на&nbsp;работу с&nbsp;психологом:</span>
+                                <input id="descr" class="descr" type="text" name="descr" required>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" checked required name="checked">
+                                <span class="checkbox__span">Даю согласие на&nbsp;обработку персональный данных
+                            </label>
+                            <button class="btn btn-colored" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__item">
+                <a class="footer__logo" href="#">
+                    <img src="./img/logo.png" alt="Логотип">
+                </a>
+            </div>
+            <div class="footer__item">
+
+            </div>
+            <div class="footer__item">
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
