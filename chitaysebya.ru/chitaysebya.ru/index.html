@@ -9,6 +9,7 @@
     <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="./inputmask.min.js"></script>
     <script defer src="./index.js"></script>
     <title>CHITAY SEBYA</title>
 </head>
@@ -326,9 +327,9 @@
                     </li>
                 </ul>
                 <div class="services__center">
-                    <button class="btn btn-colored">
+                    <a class="btn btn-colored btn-link">
                         Все услуги
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -401,9 +402,9 @@
                         </div>
                     </div>
                     <div class="services__center">
-                        <button class="btn btn-colored">
+                        <a class="btn btn-colored btn-link">
                             Читать все
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -415,7 +416,7 @@
                 </div>
                 <div class="about-me__contant">
                     <div class="about-me__item">
-                        <a class="about-me__link" href="">
+                        <a class="about-me__link" href="#">
                             <div class="about-me__link-blur">
                             </div>
                             <div class="title about-me__title">
@@ -431,9 +432,9 @@
                             себя!
                         </p>
                         <div class="button-padding">
-                            <button class="btn btn-transparent services__btn">
+                            <a class="btn btn-transparent services__btn" href="#">
                                 Подробнее
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="about-me__item about-me__img">
@@ -457,18 +458,22 @@
                                 <label class="visually-hidden" for="name">Введите ваше имя</label>
                                 <input id="name" class="name" type="text" name="name" placeholder="Ваше имя" required>
                                 <label class="visually-hidden" for="tel">Введите ваш телефон</label>
-                                <input id="tel" class="tel" type="tel" name="tel" placeholder="+7(___)-___-__-__"
+                                <input id="tel" class="tel" type="tel" name="tel" placeholder="+7 (___)-___-__-__"
                                     required>
                             </div>
                             <label class="label-descr">
-                                <span class="label-span">Опишите кратко ваш запрос на&nbsp;работу с&nbsp;психологом:</span>
-                                <input id="descr" class="descr" type="text" name="descr" required>
+                                <span class="label-span">Опишите кратко ваш запрос на&nbsp;работу
+                                    с&nbsp;психологом:</span>
+                                <textarea id="descr" class="descr" type="text" name="descr" required></textarea>
                             </label>
                             <label class="checkbox">
                                 <input type="checkbox" checked required name="checked">
                                 <span class="checkbox__span">Даю согласие на&nbsp;обработку персональный данных</span>
                             </label>
-                            <button class="btn btn-colored" type="submit">Отправить</button>
+                            <div class="invalid">
+                                Заполните все поля
+                            </div>
+                            <button class="btn btn-colored any-questions__btn" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -477,16 +482,138 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__item">
+            <div class="footer__flex footer__flex_1">
                 <a class="footer__logo" href="#">
-                    <img src="./img/logo.png" alt="Логотип">
+                    <img src="./img/footer-logo.png" alt="Логотип">
                 </a>
+                <p class="paragraph footer__paragraph">
+                    Небольшой текст о компании, который имеет некоторые характеристики реального письменного текста, но
+                    является случайным набором слов или сгенерирован иным образом.
+                </p>
+                <div class="contacts__wrapper footer__wrapper">
+                    <ul class="list-reset socials">
+                        <li class="socials__item">
+                            <a class="socials__link socials__link_footer" href="" aria-label="Наша компания вконтакте">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.87822 8.87798C7.05884 10.6974 7.05884 13.6256 7.05884 19.4821V20.5174C7.05884 26.3739 7.05884 29.3022 8.87822 31.1216C10.6976 32.9409 13.6258 32.9409 19.4824 32.9409H20.5177C26.3742 32.9409 29.3024 32.9409 31.1218 31.1216C32.9412 29.3022 32.9412 26.3739 32.9412 20.5174V19.4821C32.9412 13.6256 32.9412 10.6974 31.1218 8.87798C29.3024 7.05859 26.3742 7.05859 20.5177 7.05859H19.4824C13.6258 7.05859 10.6976 7.05859 8.87822 8.87798ZM11.0407 15.0226C11.1862 21.8624 14.6781 25.9729 20.8002 25.9729H21.1472V22.0597C23.3969 22.2789 25.0979 23.8902 25.7806 25.9729H28.9593C28.0863 22.8599 25.7918 21.139 24.3592 20.4813C25.7918 19.6702 27.8064 17.6972 28.2876 15.0226H25.4C24.7733 17.1929 22.9156 19.166 21.1472 19.3523V15.0226H18.2596V22.6078C16.4688 22.1693 14.2081 20.0429 14.1074 15.0226H11.0407Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link socials__link_footer" href="" aria-label="Наша компания на дзен">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.4958 22.4956C20.4622 24.5939 20.3235 27.2099 20.1387 32.9409C25.4815 32.9409 29.1698 32.9225 31.074 31.0737C32.9227 29.1695 32.9412 25.3057 32.9412 20.1384C27.2101 20.3233 24.5941 20.462 22.4958 22.4956ZM19.8614 32.9409C14.5185 32.9409 10.8303 32.9225 8.92606 31.0737C7.07733 29.1695 7.05884 25.3057 7.05884 20.1384C12.7899 20.3233 15.4059 20.462 17.5042 22.4956C19.5378 24.5939 19.6765 27.2099 19.8614 32.9409ZM17.5042 17.504C15.4059 19.5376 12.7899 19.6762 7.05884 19.8611C7.05884 14.6939 7.07733 10.83 8.92606 8.92582C10.8303 7.07708 14.5277 7.05859 19.8614 7.05859C19.6765 12.7897 19.5378 15.4057 17.5042 17.504ZM20.1387 7.05859C20.3143 12.7897 20.4622 15.4057 22.4958 17.504C24.5941 19.5376 27.2101 19.6762 32.9412 19.8611C32.9412 14.6939 32.9227 10.83 31.074 8.92582C29.1698 7.07708 25.4815 7.05859 20.1387 7.05859Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="contacts__mail footer__mail" href="mailto:chitaysebya@yandex.ru">chitaysebya@yandex.ru</a>
+                </div>
             </div>
-            <div class="footer__item">
-
+            <div class="footer__flex footer__flex_2">
+                <div class="footer__middle">
+                    <div class="footer__middle-item">
+                        <div class="footer__header">
+                            Информация
+                        </div>
+                        <ul class="list-reset footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    о нас
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    специалисты
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    услуги
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    цены
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__middle-item">
+                        <div class="footer__header">
+                            Консультация
+                        </div>
+                        <ul class="list-reset footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    о нас
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    специалисты
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    услуги
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item_link">
+                                    цены
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="footer__flex_link" href="#">Политика конфиденциальности</a>
             </div>
-            <div class="footer__item">
-
+            <div class="footer__flex footer__flex_3">
+                <div class="footer__header">
+                    Рубрики
+                </div>
+                <ul class="list-reset footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__item_link">
+                            Нумерология
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item_link">
+                            Астрология
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item_link">
+                            Регрессии
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item_link">
+                            Коучинг
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item_link">
+                            Таро
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item_link">
+                            Полезные статьи
+                        </a>
+                    </li>
+                </ul>
+                <div class="trade-mark">
+                    © 2023. CHITAYSEBYA
+                </div>
             </div>
         </div>
     </footer>
