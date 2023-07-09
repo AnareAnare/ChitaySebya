@@ -189,6 +189,7 @@ a {
 
 .c-contacts__mail {
     display: inline-block;
+    position: relative;
     padding: 16px 36px;
     font-family: "Montserrat";
     font-size: 24px;
@@ -197,8 +198,13 @@ a {
     line-height: 142%;
     color: #fff;
     border-radius: 80px;
-    border: 2px dashed var(--hover-color);
     transition: color 0.3s ease-in-out;
+}
+
+.c-contacts__mail svg {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .c-contacts__mail:focus {
@@ -206,9 +212,25 @@ a {
     color: var(--hover-color);
 }
 
+@keyframes dasharray {
+    0% {
+        stroke-dashoffset: 0;
+      }
+    50% {
+        stroke-dashoffset: -25;
+      }
+    100% {
+      stroke-dashoffset: -50;
+    }
+  }
+
 @media (min-width: 1025px) {
     .c-contacts__mail:hover {
         color: var(--hover-color);
+    }
+
+    .c-contacts__mail:hover svg {
+        animation: dasharray 1s linear infinite; 
     }
 }
 
