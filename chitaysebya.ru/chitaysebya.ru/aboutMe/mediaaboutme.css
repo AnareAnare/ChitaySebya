@@ -1,0 +1,439 @@
+@media (max-width: 1440px) {
+    .a-not-work::after {
+        width: 170px;
+        height: 362px;
+        right: 175px;
+        top: 25px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .a-about-me__wrapper {
+        padding: 30px 51px 30px 45px;
+        margin-bottom: 45px;
+    }
+
+    .a-about-me__title {
+        margin-bottom: 20px;
+        font-size: 29px;
+    }
+
+    .a-about-me__paragraph {
+        padding-left: 119px;
+        font-size: 14px;
+    }
+
+    .a-about-me__big {
+        font-size: 22px;
+    }
+
+    .a-margin {
+        margin-bottom: 37px;
+    }
+
+    .a-work-with {
+        background: url(./img/sunmoon.svg) no-repeat top 58px left 263px, url(./img/work-with2.svg) no-repeat bottom 88px left 278px;
+    }
+
+    .a-not-work::after {
+        width: 122px;
+        height: 267px;
+        right: 21px;
+        top: 67px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .a-main-title {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .a-about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .a-about-me__item {
+        width: 80%;
+        min-height: 0;
+    }
+
+    .a-about-me__wrapper {
+        padding: 30px 52px 30px 70px;
+        margin-bottom: 30px;
+    }
+
+    .a-about-me__paragraph {
+        padding-left: 156px;
+    }
+
+    .a-about-me__img {
+        border-radius: 55px;
+    }
+
+    .a-margin {
+        margin-bottom: 10px;
+    }
+
+    .a-title__question {
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+
+    .a-research {
+        margin-bottom: 20px;
+    }
+
+    .a-research__title {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .a-research__paragraph:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .a-research__paragraph_image {
+        padding-top: 200px;
+    }
+
+    .a-research__paragraph {
+        font-size: 20px;
+    }
+
+    .a-work-with {
+        margin-bottom: 20px;
+        background: url(./img/sunmoon.svg) no-repeat top 53px left 0px, url(./img/work-with2.svg) no-repeat bottom 17px left 0px;
+    }
+
+    .a-work-with__title {
+        padding-left: 280px;
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+
+    .a-work-with__list {
+        padding-left: 278px;
+    }
+
+    .a-work-with__item {
+        padding-left: 40px;
+        font-size: 16px;
+    }
+
+    .a-work-with__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .a-not-work {
+        margin-bottom: 20px;
+    }
+
+    .a-not-work::after {
+        width: 118px;
+        top: 3px;
+    }
+
+    .a-not-work__title {
+        padding-left: 100px;
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+
+    .a-not-work__list {
+        padding-left: 100px;
+    }
+
+    .methods {
+        margin-bottom: 30px;
+    }
+
+    .methods__title {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .methods__paragraph {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .methods__title_mini {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .methods__list {
+        margin-bottom: 30px;
+        padding-left: 0;
+        max-width: 85%;
+    }
+
+    .methods__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .methods__item {
+        padding-left: 30px;
+        font-size: 18px;
+        background: url(./img/check-circle-outline.svg) no-repeat top left / 20px 20px;
+    }
+
+    .inner-list {
+        padding-top: 10px;
+    }
+
+    .inner-list__item {
+        padding-left: 45px;
+        font-size: 12px;
+    }
+
+    .inner-list__item::before {
+        width: 16px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    .a-main-title {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .a-about-me__item {
+        width: 100%;
+    }
+
+    .a-about-me__wrapper {
+        margin-bottom: 20px;
+    }
+
+    .a-title__question {
+        margin-bottom: 19px;
+        max-width: 95%;
+        font-size: 30px;
+    }
+
+    .a-research__title {
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+
+    .a-research__paragraph_image {
+        padding-top: 120px;
+        background: url(./img/about-me-hand.svg) no-repeat top center / 258px 114px;
+    }
+
+    .a-research__paragraph {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .a-work-with {
+        background: none;
+    }
+
+    .a-work-with__title {
+        padding-left: 0;
+        margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .a-work-with__list {
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 100px;
+        background: url(./img/sunmoon.svg) no-repeat top center / 100px;
+    }
+
+    .a-work-with__item {
+        padding-left: 30px;
+        font-size: 14px;
+        background: url(./img/check-circle-outline.svg) no-repeat center left / 20px;
+    }
+
+    .a-not-work__item {
+        background: url(./img/minus-circle-outline.svg) no-repeat center left/ 20px;
+    }
+
+    .a-not-work__title {
+        padding-left: 0;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .a-not-work__list {
+        padding-left: 0;
+    }
+
+    .a-not-work::after {
+        width: 92px;
+        height: 172px;
+        right: 0;
+        top: 0px;
+    }
+
+    .methods__title {
+        font-size: 30px;
+    }
+
+    .methods__paragraph {
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .methods__title_mini {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .methods__list {
+        max-width: 100%;
+    }
+
+    .methods__item {
+        font-size: 16px;
+    }
+
+    .inner-list {
+        padding-top: 5px;
+    }
+
+    .inner-list__item {
+        padding-left: 35px;
+        font-size: 10px;
+    }
+
+    .inner-list__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .methods__finish {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .a-about-me__wrapper {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .a-about-me__big {
+        font-size: 18px;
+    }
+
+    .a-not-work::after {
+        width: 76px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-back {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .a-main-title {
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+
+    .a-about-me__title {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .a-about-me__wrapper {
+        min-height: 0;
+    }
+
+    .a-about-me__title {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .a-about-me__paragraph {
+        padding-left: 86px;
+        font-size: 12px;
+    }
+
+    .a-about-me__big {
+        font-size: 16px;
+    }
+
+    .a-margin {
+        margin-bottom: 5px;
+    }
+
+    .a-title__question {
+        margin-bottom: 15px;
+        max-width: 100%;
+        font-size: 25px;
+    }
+
+    .a-research {
+        margin-bottom: 10px;
+    }
+
+    .a-research__title {
+        font-size: 18px;
+    }
+
+    .a-research__paragraph {
+        font-size: 12px;
+    }
+
+    .a-work-with__title {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    .a-work-with__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    .a-work-with__item {
+        font-size: 12px; 
+    }
+
+    .a-not-work__title {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    .methods__title {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .methods__paragraph {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .methods__title_mini {
+        margin-bottom: 5px;
+        font-size: 19px;
+    }
+
+    .methods__list {
+        margin-bottom: 20px;
+    }
+
+    .methods__item:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    .methods__item {
+        font-size: 15px;
+    }
+
+    .methods__finish {
+        font-size: 18px;
+    }
+}

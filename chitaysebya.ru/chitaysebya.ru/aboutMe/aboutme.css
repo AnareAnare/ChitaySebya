@@ -81,6 +81,7 @@ img {
     background-color: transparent;
     cursor: pointer;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -94,22 +95,6 @@ address {
     padding: 0;
     margin: 0;
     list-style: none;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: inset(100%);
-}
-
-.block {
-    display: block;
 }
 
 .container {
@@ -284,6 +269,7 @@ address {
 
 .a-not-work {
     position: relative;
+    margin-bottom: 70px;
 }
 
 .a-not-work::after {
@@ -304,4 +290,91 @@ address {
     margin-bottom: 30px;
     font-size: 40px;
     text-align: left;
+}
+
+.a-not-work__list {
+    padding-left: 237px;
+}
+
+.a-not-work__item {
+    background: url(./img/minus-circle-outline.svg) no-repeat top left;
+}
+
+.a-not-work__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.methods {
+    margin-bottom: 158px;
+}
+
+.methods__title {
+    margin-bottom: 24px;
+    font-size: 40px; 
+}
+
+.methods__title_mini {
+    margin-bottom: 32px;
+    font-size: 32px; 
+}
+
+.methods__paragraph {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    max-width: 71%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.methods__list {
+    margin: 0 auto;
+    margin-bottom: 105px;
+    padding-left: 5px;
+    max-width: 67%;
+}
+
+.methods__item {
+    padding-left: 66px;
+    font-size: 24px;
+    background: url(./img/check-circle-outline.svg) no-repeat top left;
+}
+
+.methods__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.inner-list {
+    padding-top: 20px;
+}
+
+.inner-list__item {
+    position: relative;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.inner-list__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.inner-list__item::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    top: 8px;
+    left: 12px;
+    background-color: var(--hover-color);
+}
+
+.methods__finish {
+    margin: 0 auto;
+    max-width: 67%;
+    text-align: center;
+    font-size: 24px;
+    font-family: "TrajanPro3";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140.4%;
+    color: #FFF;
 }

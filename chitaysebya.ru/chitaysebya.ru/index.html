@@ -50,7 +50,7 @@
                         </a>
                     </div>
                     <div>
-                        <button class="btn btn-transparent">
+                        <button class="btn btn-transparent" id="need-consultation">
                             Записаться
                         </button>
                     </div>
@@ -454,21 +454,21 @@
                             Напишите свой вопрос
                         </div>
                         <form id="form" action="">
+                            <input type="hidden" name="form" value="questions">
                             <div class="form__inputs">
                                 <label class="visually-hidden" for="name">Введите ваше имя</label>
-                                <input id="name" class="name" type="text" name="name" placeholder="Ваше имя" required>
+                                <input id="name" class="name" type="text" name="name" placeholder="Ваше имя">
                                 <label class="visually-hidden" for="tel">Введите ваш телефон</label>
-                                <input id="tel" class="tel" type="tel" name="tel" placeholder="+7 (___)-___-__-__"
-                                    required>
+                                <input id="tel" class="tel" type="tel" name="tel" placeholder="+7 (___)-___-__-__">
                             </div>
                             <label class="label-descr">
                                 <span class="label-span">Опишите кратко ваш запрос на&nbsp;работу
                                     с&nbsp;психологом:</span>
-                                <textarea id="descr" class="descr" type="text" name="descr" required></textarea>
+                                <textarea id="descr" class="descr" type="text" name="descr"></textarea>
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" checked required name="checked">
-                                <span class="checkbox__span">Даю согласие на&nbsp;обработку персональный данных</span>
+                                <input class="checkbox-hidden" type="checkbox" checked name="checked">
+                                <span class="checkbox__span">Даю согласие на обработку персональных данных</span>
                             </label>
                             <div class="invalid">
                                 Заполните все поля
@@ -477,6 +477,40 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="pop-up-wrapper">
+            <div class="pop-up">
+                <button class="btn pop-up__btn" aria-label="Закрыть форму заказа услуги">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.9998 26.6665C10.1198 26.6665 5.33317 21.8798 5.33317 15.9998C5.33317 10.1198 10.1198 5.33317 15.9998 5.33317C21.8798 5.33317 26.6665 10.1198 26.6665 15.9998C26.6665 21.8798 21.8798 26.6665 15.9998 26.6665ZM15.9998 2.6665C8.6265 2.6665 2.6665 8.6265 2.6665 15.9998C2.6665 23.3732 8.6265 29.3332 15.9998 29.3332C23.3732 29.3332 29.3332 23.3732 29.3332 15.9998C29.3332 8.6265 23.3732 2.6665 15.9998 2.6665ZM19.4532 10.6665L15.9998 14.1198L12.5465 10.6665L10.6665 12.5465L14.1198 15.9998L10.6665 19.4532L12.5465 21.3332L15.9998 17.8798L19.4532 21.3332L21.3332 19.4532L17.8798 15.9998L21.3332 12.5465L19.4532 10.6665Z"
+                            fill="#3D4B6D" />
+                    </svg>
+                </button>
+                <div class="pop-up__header">
+                    Заказать услугу
+                </div>
+                <div class="pop-up__descr">
+                    Оставьте свои контактные <br>данные и мы с Вами свяжемся в ближайшее время
+                </div>
+                <form class="pop-up__form" action="">
+                    <input type="hidden" name="form" value="need a consultation">
+                    <div class="form__inputs pop-up__inputs">
+                        <label class="visually-hidden" for="p-name">Введите ваше имя</label>
+                        <input id="p-name" class="name p-name" type="text" name="name" placeholder="Ваше имя">
+                        <label class="visually-hidden" for="p-tel">Введите ваш телефон</label>
+                        <input id="p-tel" class="tel p-tel" type="tel" name="tel" placeholder="+7 (___)-___-__-__">
+                    </div>
+                    <label class="p-checkbox">
+                        <input class="p-checkbox-hidden" type="checkbox" checked name="checked">
+                        <span class="p-checkbox__span">Даю согласие на обработку персональныx данных</span>
+                    </label>
+                    <div class="invalid p-invalid">
+                        Заполните все поля
+                    </div>
+                    <button class="btn btn-colored any-questions__btn" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
     </main>

@@ -104,10 +104,6 @@ address {
     clip-path: inset(100%);
 }
 
-.block {
-    display: block;
-}
-
 .container {
     max-width: 1432px;
     margin: 0 auto;
@@ -169,7 +165,7 @@ address {
     position: relative;
     color: #FFF;
     font-size: 20.952px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
@@ -229,7 +225,7 @@ address {
     padding: 10px 37px;
     color: #FFF;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 500;
     border-radius: 8px;
     border: 1px solid #FFF;
@@ -242,7 +238,7 @@ address {
     padding: 10px 37px;
     color: #FFF;
     font-size: 20px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 500;
     border: none;
     border-radius: 81px;
@@ -970,6 +966,12 @@ address {
     color: #758dc8;
 }
 
+.name2::placeholder,
+.tel2::placeholder,
+.descr::placeholder {
+    color: #f24646;
+}
+
 .descr {
     padding: 18px 21px 19px 24px;
     min-height: 143px;
@@ -1008,9 +1010,11 @@ address {
 
 .checkbox {
     margin-bottom: 32px;
+    padding-left: 34px;
 }
 
 .checkbox__span {
+    position: relative;
     font-family: "Montserrat";
     font-size: 18px;
     font-style: normal;
@@ -1018,6 +1022,46 @@ address {
     line-height: normal;
     color: #FFF;
 }
+
+.checkbox-hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+.checkbox__span::after {
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: -35px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--hover-color);
+}
+
+.checkbox__span_red::after {
+    outline: 1px solid #f24646;
+}
+
+.checkbox__span::before {
+    display: inline-block;
+    position: absolute;
+    left: -31px;
+    top: -2px;
+    z-index: 5;
+    content: '✔';
+    text-align: center;
+    color: #1B3168;
+    line-height: 24px;
+    height: 24px;
+    opacity: 0;
+  }
+  
+  .checkbox-hidden:checked~.checkbox__span::before {
+    opacity: 1;
+  }
 
 .any-questions__btn {
     padding: 13px 51px;
@@ -1040,6 +1084,10 @@ address {
     line-height: normal;
     color: #f24646;
     background: url(./img/alert-circle.svg) no-repeat left center/ contain;
+}
+
+.block {
+    display: block;
 }
 
 .name:focus,
@@ -1255,3 +1303,156 @@ address {
     outline: none;
     color: var(--hover-color);
 }
+
+/* pop-up*/
+
+.pop-up-wrapper {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.50);
+    transform: translateX(-120%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.pop-up {
+    position: relative;
+    width: 340px;
+    min-height: 449px;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+    border-radius: 19px;
+    border: 2px solid var(--hover-color);
+    background: linear-gradient(209deg, #0E1C40 6.46%, #1B3168 100%);
+}
+
+.pop-up__inputs {
+    flex-direction: column;
+    gap: 0;
+}
+
+.pop-up__btn {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.pop-up__header {
+    margin-bottom: 17px;
+    text-align: center;
+    font-size: 26px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
+
+.pop-up__descr {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.p-name,
+.p-tel {
+    width: 100%;
+}
+
+.p-checkbox-hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+.p-checkbox__span {
+    position: relative;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.p-checkbox__span::after {
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: -42px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--hover-color);
+}
+
+.p-checkbox__span_red::after {
+    outline: 1px solid #f24646;
+}
+
+.p-checkbox__span::before {
+    display: inline-block;
+    position: absolute;
+    left: -36px;
+    top: -2px;
+    z-index: 5;
+    content: '✔';
+    text-align: center;
+    color: #1B3168;
+    line-height: 24px;
+    height: 24px;
+    opacity: 0;
+  }
+  
+  .p-checkbox-hidden:checked~.p-checkbox__span::before {
+    opacity: 1;
+  }
+
+  .p-checkbox {
+    display: block;
+    padding-left: 34px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .pop-up__btn:focus {
+    outline: none;
+  }
+
+  .pop-up__btn svg path {
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .pop-up__btn:focus svg path {
+    fill: var(--hover-color);
+  }
+
+  @media (min-width: 1025px) {
+    .pop-up__btn:hover svg path {
+        fill: var(--hover-color);
+      }
+  }
+
+  .pop-up__btn:active svg path {
+    fill: var(--hover-color);
+  }
+
+  .p-invalid {
+    text-align: left;
+  }
