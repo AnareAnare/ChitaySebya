@@ -631,7 +631,7 @@ address {
 }
 
 .paragraph-price {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
     font-weight: 600;
     font-size: 24px;
 }
@@ -757,7 +757,7 @@ address {
 }
 
 .articles__link:focus img {
-    transform: scale(120%);
+    transform: scale(1.2);
 }
 
 .articles__link:focus .title {
@@ -770,7 +770,7 @@ address {
 
 @media (min-width: 1025px) {
     .articles__link:hover img {
-        transform: scale(120%);
+        transform: scale(1.2);
     }
 
     .articles__link:hover .title {
@@ -783,7 +783,7 @@ address {
 }
 
 .articles__link:active img {
-    transform: scale(120%);
+    transform: scale(1.2);
 }
 
 .articles__link:active .title {
@@ -861,7 +861,7 @@ address {
 
 .about-me__paragraph {
     max-width: 88%;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
     padding-left: 26px;
     line-height: 142%;
     text-align: left;
