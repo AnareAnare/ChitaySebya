@@ -1,0 +1,362 @@
+@media (max-width: 1680px) {
+    .main-title {
+        font-size: 40px;
+    }
+
+    .contacts {
+        justify-content: space-between;
+        gap: 0; 
+    }
+
+    .contacts__logo {
+        margin-right: 0;
+    }
+
+    .about-me__title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding: 0 40px; 
+    }
+
+    .contacts {
+        gap: 114px;
+        margin-bottom: 40px;
+    }
+
+    .contacts__logo {
+        width: 180px;
+        height: 107px;
+        margin-right: auto;
+    }
+
+    .contacts__wrapper {
+        gap: 43px;
+    }
+
+    .navigation {
+        margin-bottom: 30px;
+    }
+
+    .swiper {
+        height: 660px;
+    }
+
+    .swiper-slide {
+        padding-top: 100px;
+        background: url(./img/slider1.svg) no-repeat right top 16px / 46% 78%;
+    }
+
+    .text__descr {
+        font-size: 16px; 
+    }
+
+    .main-title {
+        margin-bottom: 20px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: 593px; 
+    }
+
+    .swiper-button-prev {
+        top: 610px;
+        left: 230px;
+    }
+
+    .swiper-button-next {
+        right: 230px;
+        top: 610px;
+    }
+
+    .benefits {
+        padding-top: 142px; 
+    }
+
+    .benefits::before {
+        bottom: -220px;
+        background: url(./img/benefits1280.svg) no-repeat top center/ cover;
+    }
+
+    .benefits__item {
+        min-height: 0;
+    }
+
+    .benefits__link {
+        padding: 224px 11px 30px;
+        background-position: top 57px center;
+    }
+
+    .benefits__link-1 {
+        background-size: 95px 114px;
+    }
+
+    .benefits__link-2 {
+        background-size: 155px 182px;
+        background-position: top 26px center;
+    }
+
+    .benefits__link-3 {
+        background-size: 114px 110px;
+    }
+
+    .benefits__link-4 {
+        background-size: 208px 90px;
+        background-position: top 59px center;
+    }
+
+    .benefits__title {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+
+    .services {
+        padding-top: 20px; 
+    }
+
+    .services__list {
+        row-gap: 27px; 
+    }
+
+    .services__item {
+        min-height: 0;
+    }
+
+    .services__img {
+        height: 280px; 
+    }
+
+    .services__paragraph {
+        font-size: 16px;
+    }
+
+    .paragraph-price {
+        font-size: 20px;
+    }
+
+    .services::after {
+        width: 520px;
+        height: 210px;
+        bottom: -53px;
+        left: 0;
+        background: url(./img/services-back.svg) center no-repeat;
+        background-size: 100%;
+    }
+
+    .articles {
+        padding-top: 155px;
+        padding-bottom: 0;
+    }
+
+    .articles::before {
+        background: url(./img/articles1280.svg) no-repeat top center/ cover; 
+    }
+
+    .title__media {
+        margin-bottom: 27px;
+    }
+
+    .articles__articles {
+        margin-bottom: 53px; 
+    }
+
+    .articles__item {
+        min-height: 0;
+    }
+
+    .articles__img {
+        min-height: 0;
+    }
+
+    .item__img {
+        width: 280px;
+        height: 189px;
+        flex-shrink: 0;
+    }
+
+    .item__article {
+        gap: 20px;
+    }
+
+    .articles__img {
+        margin-bottom: 13px;
+    }
+
+    .articles__title {
+        font-size: 18px;
+    }
+
+    .articles__paragraph {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .item__paragraph {
+        font-size: 16px;
+    }
+
+    .about-me {
+        padding-top: 196px;
+    }
+
+    .about-me__contant {
+        gap: 20px;
+    }
+
+    .about-me__item {
+        width: calc((100% - 20px) / 2);
+        min-height: 0;
+    }
+
+    .about-me__img {
+        flex-basis: 50%;
+    }
+
+    .about-me__title {
+        margin-bottom: 14px;
+        font-size: 26px;
+    }
+
+    .about-me__link {
+        min-height: 0;
+        padding: 38px 51px 31px 46px;
+        margin-bottom: 29px;
+    }
+
+    .about-me__link-paragraph {
+        padding-left: 58px;
+        font-size: 16px;
+    }
+
+    .about-me__paragraph {
+        max-width: 100%;
+        padding-left: 33px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .button-padding {
+        padding-left: 33px;
+    }
+
+    .any-questions::before {
+        top: -5px;
+        bottom: 0;
+        background: url(./img/questions1280.svg) no-repeat top center/ cover;
+    }
+
+    .any-questions__content {
+        background: none;
+    }
+
+    .any-questions {
+        padding-bottom: 79px;
+    }
+
+    .any-questions__content {
+        padding-top: 176px; 
+    }
+
+    .any-questions__text {
+        flex-basis: 49%;
+    }
+
+    #form {
+        max-width: 94%;
+    }
+
+    .checkbox__span::after {
+        top: 2px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .checkbox__span::before {
+        left: -33px;
+        top: 1px;
+        line-height: 21px;
+    }
+
+    .footer__flex {
+        min-height: 349px; 
+    }
+
+    .footer__logo {
+        margin-bottom: 33px; 
+    }
+
+    .footer__paragraph {
+        max-width: 85%;
+    }
+
+    .footer__wrapper {
+        gap: 26px;
+    }
+
+    .footer__middle {
+        padding-top: 20px;
+    }
+
+    .footer__flex_link {
+        padding-bottom: 12px;  
+    }
+
+    .footer__flex_link::after {
+        bottom: 13px;
+    }
+
+    .footer__flex_2 {
+        flex-basis: 36%;
+    }
+
+    .footer__flex_3 {
+        padding-top: 20px;
+        padding-left: 57px;
+        flex-basis: 20%;
+    }
+
+    .footer__header {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .container {
+        padding: 0 20px; 
+    }
+
+    .text {
+        max-width: 50%;
+    }
+
+    .contacts__wrapper {
+        gap: 34px;
+    }
+
+    .contacts {
+        gap: 64px;
+    }
+
+    .contacts__mail {
+        font-size: 16px;
+    }
+
+    .swiper-button-next {
+        right: 5px;
+    }
+
+    .swiper-button-prev {
+        left: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
