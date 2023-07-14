@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkboxQ = document.querySelector('.checkbox-hidden');
     const checkboxSpan = document.querySelector('.p-checkbox__span');
     const checkboxSpanQ = document.querySelector('.checkbox__span');
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.nav');
 
 
     /* Свайпер*/
@@ -125,4 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
             pErr.classList.add('block');
         }
     });
+
+    /*burger*/
+    burger.addEventListener('click', () => {
+        menu.classList.add('nav__active');
+        document.body.classList.add('stop-scroll');
+      });
 });
