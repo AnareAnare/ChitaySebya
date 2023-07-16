@@ -507,7 +507,7 @@ address {
     width: 100%;
     top: 0;
     bottom: -220px;
-    background: url(./img/benefits.png) no-repeat  top center/ cover;
+    background: url(./img/benefits.svg) no-repeat  top center/ cover;
 }
 
 .benefits__contant {
@@ -665,7 +665,7 @@ address {
     height: 307px;
     bottom: -60px;
     left: -29px;
-    background: url(./img/services-back.png) center no-repeat;
+    background: url(./img/services-back.svg) center no-repeat;
 }
 
 .articles {
@@ -680,7 +680,7 @@ address {
     width: 100%;
     top: 0;
     bottom: -700px;
-    background: url(./img/articles-wave.png) no-repeat  top center/ cover;
+    background: url(./img/articles-wave.svg) no-repeat  top center/ cover;
 }
 
 .articles__content {
@@ -905,7 +905,7 @@ address {
     width: 100%;
     top: -161px;
     bottom: -250px;
-    background: url(./img/any-questions.png) no-repeat  top center/ cover;
+    background: url(./img/any-questions.svg) no-repeat  top center/ cover;
 }
 
 .any-questions__content {
@@ -1123,7 +1123,7 @@ address {
 .footer__flex {
     display: flex;
     flex-direction: column;
-    min-height: 343px;
+    min-height: 300px;
 }
 
 .footer__logo {
@@ -1210,7 +1210,6 @@ address {
 .footer__flex_link {
     width: fit-content;
     position: relative;
-    padding-bottom: 9px;
     font-family: "Montserrat";
     color: #FFF;
     font-size: 13px;
@@ -1225,7 +1224,7 @@ address {
     content: "";
     width: 100%;
     height: 1px;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
     background-color: currentColor;
     transition: background-color 0.3s ease-in-out;
@@ -1284,8 +1283,7 @@ address {
 }
 
 .trade-mark {
-    margin-top: auto;
-    padding-bottom: 10px;
+    flex-basis: 16%;
     font-family: "Montserrat";
     font-size: 13px;
     color: #FFF;
@@ -1293,6 +1291,10 @@ address {
     font-weight: 400;
     line-height: 142%;
     opacity: 0.5;
+}
+
+.footer__flex-wrapper {
+    flex-basis: 36%;
 }
 
 .footer__item_link:focus {
