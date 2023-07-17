@@ -1223,8 +1223,7 @@
     }
 
     .benefits__link {
-        padding-top: 143px;
-        padding-bottom: 19px;
+        padding: 143px 5px 19px;
         background-position: top 27px center;
     }
 
@@ -1238,7 +1237,8 @@
     }
 
     .benefits::before {
-        background: url(./img/benefits480.svg) no-repeat top 22px center/ cover;
+        bottom: -84px;
+        background: url(./img/benefits480.svg) no-repeat top 6px center/ cover;
     }
 
     .benefits__link-1 {
@@ -1247,21 +1247,35 @@
 
     .benefits__link-2 {
         background-size: 94px 110px;
+        background-position: top 16px center;
     }
 
     .benefits__link-3 {
+        padding-top: 115px;
         background-size: 83px 80px;
     }
 
     .benefits__link-4 {
+        padding-top: 115px;
         background-size: 153px 66px;
+    }
+
+    .services__list {
+        margin-bottom: 36px; 
+    }
+
+    .services::after {
+        bottom: -89px;
+        background-size: 229px 135px;
     }
 
     .services__img {
         height: 173px;
+        margin-bottom: 14px;
     }
 
     .paragraph-price {
+        margin-bottom: 14px;
         font-size: 16px;
     }
 
@@ -1269,7 +1283,130 @@
         font-size: 16px;
     }
 
+    .services {
+        padding-top: 59px;
+    }
+
+    .services__title {
+        margin-bottom: 18px;
+    }
+
+    .services__paragraph {
+        margin-bottom: 11px;
+    }
+
+    .articles {
+        padding-top: 83px;
+    } 
+    
+    .title__media {
+        margin-bottom: 31px;
+    }
+
+    .articles__articles {
+        gap: 27px;
+        margin-bottom: 25px;
+    }
+
+    .item__img {
+        height: 189px;
+    }
+
+    .item__title {
+        margin-bottom: 10px;
+    }
+
+    .item__paragraph {
+        font-size: 16px;
+    }
+
+    .item {
+        gap: 36px;
+    }
+
+    .articles__img {
+        height: 189px;
+    }
+
+    .articles__title {
+        margin-bottom: 10px;
+    }
+
+    .articles__paragraph {
+        font-size: 16px;
+    }
+
+    .about-me {
+        padding-top: 118px;
+        padding-bottom: 30px;
+    }
+
+    .about__title {
+        margin-bottom: 18px;
+    }
+
+    .about-me__title {
+        margin-bottom: 14px;
+    }
+
+    .about-me__link-paragraph {
+        font-size: 16px;
+    }
+
+    .about-me__link {
+        padding: 18px 22px;
+    }
+
+    .about-me__paragraph {
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    .any-questions {
+        padding-bottom: 68px;
+    }
+
+    .any-questions__content {
+        padding-top: 381px;
+    }
+
+    .checkbox {
+        text-align: left;
+    }
+
+    .any-questions__btn {
+        padding: 10px 47px;
+    }
+
+    .footer {
+        padding-top: 47px;
+        padding-bottom: 27px;
+    }
+
+    .footer__logo {
+        width: 181px;
+        height: 39px; 
+    }
+
+    .footer__paragraph {
+        font-size: 14px;
+    }
+
+    .footer__middle {
+        padding-top: 16px;
+    }
+
+    .footer__wrapper {
+        padding-top: 39px;
+        margin-right: 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 385px) {
     .articles::before {
+        top: 29px;
+        bottom: -221px;
         background: url(./img/articles480.svg) no-repeat top center/ cover;
     }
 }

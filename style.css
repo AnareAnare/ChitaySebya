@@ -915,14 +915,13 @@ address {
     display: flex;
     justify-content: end;
     align-items: center;
-    background: url(./img/questions1.png) left 34px top 165px no-repeat ;
 }
 
 .any-questions__title {
     margin-bottom: 13px;
     color: #FFF;
     font-size: 48px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
