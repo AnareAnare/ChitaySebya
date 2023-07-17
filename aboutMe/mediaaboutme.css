@@ -8,58 +8,138 @@
 }
 
 @media (max-width: 1280px) {
+    .a-main-title {
+        margin-bottom: 34px;
+    }
+
+    .a-about-me {
+        margin-bottom: 126px;
+    }
+
+    .a-about-me__item {
+        min-height: 0;
+    }
+
     .a-about-me__wrapper {
-        padding: 30px 51px 30px 45px;
-        margin-bottom: 45px;
+        padding: 34px 51px 33px 45px;
+        margin-bottom: 33px;
+        min-height: 0;
     }
 
     .a-about-me__title {
-        margin-bottom: 20px;
-        font-size: 29px;
+        margin-bottom: 11px;
+        font-size: 26px;
     }
 
     .a-about-me__paragraph {
-        padding-left: 119px;
-        font-size: 14px;
+        padding-left: 48px;
+        font-size: 16px;
     }
 
     .a-about-me__big {
-        font-size: 22px;
+        padding-left: 23px;
+        font-size: 20px;
     }
 
     .a-margin {
-        margin-bottom: 37px;
+        margin-bottom: 16px;
+    }
+
+    .a-title__question {
+        margin-bottom: 23px;
+    }
+
+    .a-research__paragraph:not(:last-child) {
+        margin-bottom: 27px;
+    }
+
+    .a-research__paragraph {
+        max-width: 67%;
     }
 
     .a-work-with {
-        background: url(./img/sunmoon.svg) no-repeat top 58px left 263px, url(./img/work-with2.svg) no-repeat bottom 88px left 278px;
+        margin-bottom: 54px;
+        background: url(./img/sunmoon.svg) no-repeat top 57px left 191px / 110px 108px, url(./img/work-with2.svg) no-repeat top 222px left 193px / 115px 264px;
+    }
+
+    .a-work-with__list {
+        max-width: 79%;
+        padding-left: 342px;
+    }
+
+    .a-work-with__title {
+        padding-left: 392px;
+    }
+
+    .a-not-work {
+        margin-bottom: 61px;
+    }
+
+    .a-not-work__title {
+        padding-left: 194px;
     }
 
     .a-not-work::after {
         width: 122px;
         height: 267px;
-        right: 21px;
-        top: 67px;
+        right: 191px;
+        top: -6px;
+    }
+
+    .a-not-work__list {
+        padding-left: 193px;
+    }
+
+    .methods {
+        margin-bottom: 60px;
+    }
+
+    .methods__title {
+        margin-bottom: 20px;
+    }
+
+    .methods__list {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .methods__title_mini {
+        margin-bottom: 28px;
+    }
+
+    .methods__paragraph {
+        margin-bottom: 67px;
+    }
+
+    .methods__item {
+        font-size: 20px;
+    }
+
+    .methods__item:not(:last-child) {
+        margin-bottom: 21px;
+    }
+
+    .methods__finish {
+        display: none;
     }
 }
 
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
     .a-main-title {
         margin-bottom: 20px;
         font-size: 35px;
     }
 
-    .a-about-me {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 20px;
+    .a-about-me__title {
+        font-size: 20px;
     }
 
-    .a-about-me__item {
-        width: 80%;
-        min-height: 0;
+    .a-about-me__paragraph {
+        padding-left: 0;
     }
 
     .a-about-me__wrapper {
@@ -67,12 +147,8 @@
         margin-bottom: 30px;
     }
 
-    .a-about-me__paragraph {
-        padding-left: 156px;
-    }
-
     .a-about-me__img {
-        border-radius: 55px;
+        border-radius: 20px;
     }
 
     .a-margin {
@@ -106,7 +182,7 @@
 
     .a-work-with {
         margin-bottom: 20px;
-        background: url(./img/sunmoon.svg) no-repeat top 53px left 0px, url(./img/work-with2.svg) no-repeat bottom 17px left 0px;
+        background: url(./img/sunmoon.svg) no-repeat top 57px left 0 / 110px 108px, url(./img/work-with2.svg) no-repeat top 222px left 0 / 115px 264px;
     }
 
     .a-work-with__title {
@@ -121,7 +197,6 @@
 
     .a-work-with__item {
         padding-left: 40px;
-        font-size: 16px;
     }
 
     .a-work-with__item:not(:last-child) {
@@ -135,6 +210,7 @@
     .a-not-work::after {
         width: 118px;
         top: 3px;
+        right: 0;
     }
 
     .a-not-work__title {
@@ -145,10 +221,6 @@
 
     .a-not-work__list {
         padding-left: 100px;
-    }
-
-    .methods {
-        margin-bottom: 30px;
     }
 
     .methods__title {
@@ -178,7 +250,7 @@
 
     .methods__item {
         padding-left: 30px;
-        font-size: 18px;
+        font-size: 20px;
         background: url(./img/check-circle-outline.svg) no-repeat top left / 20px 20px;
     }
 
@@ -188,7 +260,6 @@
 
     .inner-list__item {
         padding-left: 45px;
-        font-size: 12px;
     }
 
     .inner-list__item::before {
@@ -197,10 +268,32 @@
     }
 }
 
+@media (max-width: 992px) {
+    .a-about-me__wrapper {
+        padding: 32px 30px 30px 34px;
+    }
+
+    .a-about-me__big {
+        padding-left: 0;
+        font-size: 16px;
+    }
+
+    .a-work-with__list {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
+    .section-back {
+        font-size: 14px;
+    }
+
     .a-main-title {
-        margin-bottom: 15px;
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .a-about-me {
+        margin-bottom: 91px;
     }
 
     .a-about-me__item {
@@ -208,62 +301,89 @@
     }
 
     .a-about-me__wrapper {
-        margin-bottom: 20px;
+        margin-bottom: 29px;
+    }
+
+    .a-about-me__img img {
+        height: 263px;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
     .a-title__question {
-        margin-bottom: 19px;
+        margin-bottom: 25px;
         max-width: 95%;
-        font-size: 30px;
+        font-size: 24px;
+    }
+
+    .a-research {
+        margin-bottom: 42px;
     }
 
     .a-research__title {
         margin-bottom: 5px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .a-research__paragraph_image {
-        padding-top: 120px;
-        background: url(./img/about-me-hand.svg) no-repeat top center / 258px 114px;
+        padding-top: 274px;
+        background: url(./img/about-me-hand.svg) no-repeat top 30px center;
     }
 
     .a-research__paragraph {
         max-width: 100%;
-        font-size: 14px;
+        font-size: 20px;
+    }
+
+    .a-research__paragraph:not(:last-child) {
+        margin-bottom: 17px;
     }
 
     .a-work-with {
-        background: none;
+        margin-bottom: 94px;
+        background: url(./img/sunmoon.svg) no-repeat top 99px left 0 / 110px 108px, url(./img/work-with2.svg) no-repeat top 267px left 0 / 115px 264px;
     }
 
     .a-work-with__title {
         padding-left: 0;
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
     }
 
     .a-work-with__list {
         max-width: 100%;
-        padding-left: 0;
-        padding-top: 100px;
-        background: url(./img/sunmoon.svg) no-repeat top center / 100px;
+        padding-left: 152px;
+        padding-top: 33px;
     }
 
     .a-work-with__item {
-        padding-left: 30px;
-        font-size: 14px;
-        background: url(./img/check-circle-outline.svg) no-repeat center left / 20px;
+        padding-left: 48px;
+        font-size: 18px;
+    }
+
+    .a-work-with__item:not(:last-child) {
+        margin-bottom: 19px;
+    }
+
+    .a-not-work {
+        margin-bottom: 45px;
     }
 
     .a-not-work__item {
+        padding-left: 41px;
+        font-size: 16px;
         background: url(./img/minus-circle-outline.svg) no-repeat center left/ 20px;
+    }
+
+    .a-not-work__item:not(:last-child) {
+        margin-bottom: 13px;
     }
 
     .a-not-work__title {
         padding-left: 0;
-        margin-bottom: 10px;
-        font-size: 30px;
+        margin-bottom: 27px;
+        font-size: 40px;
     }
 
     .a-not-work__list {
@@ -271,41 +391,54 @@
     }
 
     .a-not-work::after {
-        width: 92px;
-        height: 172px;
+        width: 122px;
+        height: 220px;
         right: 0;
-        top: 0px;
+        top: -13px;
+    }
+
+    .methods {
+        margin-bottom: 75px;
     }
 
     .methods__title {
-        font-size: 30px;
+        margin-bottom: 24px;
+        font-size: 40px;
     }
 
     .methods__paragraph {
+        margin-bottom: 58px;
         max-width: 100%;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .methods__title_mini {
-        margin-bottom: 10px;
-        font-size: 22px;
+        margin-bottom: 27px;
+        font-size: 32px;
     }
 
     .methods__list {
         max-width: 100%;
+        margin-bottom: 0;
     }
 
     .methods__item {
-        font-size: 16px;
+        padding-left: 67px;
+        font-size: 20px;
+        background: url(./img/check-circle-outline.svg) no-repeat top left;
+    }
+
+    .methods__item:not(:last-child) {
+        margin-bottom: 23px;
     }
 
     .inner-list {
-        padding-top: 5px;
+        padding-top: 25px;
     }
 
     .inner-list__item {
-        padding-left: 35px;
-        font-size: 10px;
+        padding-left: 52px;
+        font-size: 18px;
     }
 
     .inner-list__item:not(:last-child) {
@@ -318,6 +451,14 @@
 }
 
 @media (max-width: 576px) {
+    .a-about-me {
+        flex-direction: column-reverse;
+    }
+
+    .a-about-me__img img {
+        height: 400px;
+    }
+
     .a-about-me__wrapper {
         padding: 30px 20px 30px 20px;
     }
@@ -326,54 +467,65 @@
         font-size: 18px;
     }
 
+    .a-work-with {
+        margin-bottom: 33px;
+        padding-top: 165px;
+        background: url(./img/sunmoon.svg) no-repeat top center / 166px;
+    }
+
+    .a-work-with__list {
+        padding-left: 0;
+    }
+
+    .a-not-work {
+        padding-top: 260px; 
+    }
+
     .a-not-work::after {
-        width: 76px;
-        height: 140px;
+        width: 134px;
+        height: 242px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
 @media (max-width: 480px) {
-    .section-back {
-        margin-bottom: 5px;
-        font-size: 14px;
+    .container {
+        padding: 0 10px;
     }
 
-    .a-main-title {
-        margin-bottom: 10px;
-        font-size: 23px;
+    .a-about-me {
+        margin-bottom: 115px;
     }
 
-    .a-about-me__title {
-        margin-bottom: 10px;
-        font-size: 22px;
+    .a-about-me__img img {
+        height: 273px;
     }
 
     .a-about-me__wrapper {
-        min-height: 0;
+        margin-bottom: 24px;
+        padding: 20px 20px 23px 28px;
+        text-align: center;
     }
 
     .a-about-me__title {
         margin-bottom: 10px;
-        font-size: 22px;
-    }
-
-    .a-about-me__paragraph {
-        padding-left: 86px;
-        font-size: 12px;
+        text-align: center;
     }
 
     .a-about-me__big {
-        font-size: 16px;
+        text-align: center;
+        font-size: 14px;
     }
 
     .a-margin {
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     .a-title__question {
         margin-bottom: 15px;
         max-width: 100%;
-        font-size: 25px;
     }
 
     .a-research {
@@ -381,59 +533,102 @@
     }
 
     .a-research__title {
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .a-research__paragraph_image {
+        padding-top: 252px;
+        background: url(./img/about-me-hand.svg) no-repeat top 30px center / 355px 163px;
     }
 
     .a-research__paragraph {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .a-research__paragraph:not(:last-child) {
+        margin-bottom: 22px;
+    }
+
+    .a-work-with {
+        padding-top: 249px;
+        background: url(./img/sunmoon.svg) no-repeat top 50px center / 166px;
     }
 
     .a-work-with__title {
         margin-bottom: 5px;
-        font-size: 25px;
+        font-size: 24px;
     }
 
-    .a-work-with__item:not(:last-child) {
-        margin-bottom: 5px;
+    .a-work-with__list {
+        max-width: 99%;
+        padding-top: 19px;
     }
 
     .a-work-with__item {
-        font-size: 12px; 
+        font-size: 16px; 
     }
 
-    .a-not-work__title {
-        margin-bottom: 5px;
-        font-size: 25px;
-    }
-
-    .methods__title {
-        font-size: 25px;
-        margin-bottom: 5px;
-    }
-
-    .methods__paragraph {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .methods__title_mini {
-        margin-bottom: 5px;
-        font-size: 19px;
-    }
-
-    .methods__list {
+    .a-work-with__item:not(:last-child) {
         margin-bottom: 20px;
     }
 
+    .a-not-work {
+        padding-top: 293px;
+        margin-bottom: 48px;
+    }
+
+    .a-not-work__title {
+        margin-bottom: 24px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .a-not-work__item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    .methods {
+        margin-bottom: 121px;
+    }
+
+    .methods__title {
+        font-size: 24px;
+        margin-bottom: 23px;
+    }
+
+    .methods__paragraph {
+        font-size: 16px;
+        margin-bottom: 43px;
+    }
+
+    .methods__title_mini {
+        margin-bottom: 33px;
+        font-size: 24px;
+    }
+
     .methods__item:not(:last-child) {
-        margin-bottom: 7px;
+        margin-bottom: 17px;
     }
 
     .methods__item {
-        font-size: 15px;
+        padding-left: 44px;
+        font-size: 16px;
     }
 
-    .methods__finish {
-        font-size: 18px;
+    .inner-list {
+        padding-top: 17px;
+    }
+
+    .inner-list__item {
+        padding-left: 33px;
+        font-size: 16px;
+    }
+
+    .inner-list__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .inner-list__item::before {
+        left: 3px; 
     }
 }
