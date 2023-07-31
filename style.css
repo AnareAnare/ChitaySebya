@@ -78,7 +78,10 @@ img {
     cursor: pointer;
 }
 
-.burger {
+.burger,
+.for-burger,
+.btn__secondmenu,
+.for-burger__socials {
     display: none;
 }
 
@@ -418,6 +421,14 @@ address {
     content: "";
 }
 
+.swiper-button-prev:focus {
+    outline: 1px solid #fff;
+}
+
+.swiper-button-next:focus {
+    outline: 1px solid #fff;
+}
+
 @media (min-width: 1025px) {
     .swiper-button-prev:hover {
         background-image: url(./img/arrowHover.svg);
@@ -630,6 +641,11 @@ address {
     height: 340px;
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.services__img_active {
+    transform: scale(1.2);
 }
 
 .services__paragraph {

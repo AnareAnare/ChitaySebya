@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkboxSpanQ = document.querySelector('.checkbox__span');
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.nav');
-
+    const servicesBtnLinks = document.querySelectorAll('.services__btn');
+    const btnCloseMenu = document.querySelector('.btn__close');
+    
 
     /* Свайпер*/
     const swiper = new Swiper('.swiper', {
@@ -33,6 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: 'true',
         },
     });
+
+    /*img scale hover*/
+
+    servicesBtnLinks.forEach(btn => {
+        btn.addEventListener('mouseover', (e) => {
+            const parent = e.target.closest('.services__item');
+            const img = parent.querySelector('.services__img img');
+            img.classList.toggle('services__img_active');
+        });
+        btn.addEventListener('mouseout', (e) => {
+            const parent = e.target.closest('.services__item');
+            const img = parent.querySelector('.services__img img');
+            img.classList.toggle('services__img_active');
+        });
+    });
+
 
     /* Инпутмаск*/
     const im = new Inputmask("+7 (999)-999-99-99");
@@ -133,4 +151,27 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.add('nav__active');
         document.body.classList.add('stop-scroll');
       });
+      
+    /* Menu */
+    function closeMenu() {
+        menu.classList.remove('nav__active');
+        document.body.classList.remove('stop-scroll');   
+    }
+
+    btnCloseMenu.addEventListener('click', () => {
+        closeMenu(); 
+    });
+
+    
+    document.body.addEventListener('click', (e) => {
+        const nav = document.querySelector('.nav__active');
+        let target = e.target;
+        const burgerClick = target.closest('.burger');
+        if (nav) {
+          let navClick = target == nav || nav.contains(target) || burgerClick;
+            if (!navClick) {
+                closeMenu();
+            }   
+        }
+    });
 });

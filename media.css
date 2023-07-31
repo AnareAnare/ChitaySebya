@@ -714,7 +714,6 @@
     }
 
     .nav {
-        display: none;
         position: absolute;
         right: 0;
         top: 0;
@@ -747,12 +746,69 @@
         transform: none;
     }
 
-    .nav__active .nav__list {
-        flex-direction: column;
+    .for-burger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
-    .nav__active .btn__close {
+    .nav__list {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .btn__close {
+        position: absolute;
+        right: 3px;
+
+    }
+
+    .for-burger__socials {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .nav__active .footer__mail {
+        opacity: 1;
+    }
+
+    .btn__secondmenu {
         display: block;
+        position: absolute;
+        right: 3px;
+        top: 174px;
+        z-index: 60;
+    }
+
+    .nav__item {
+        width: 100%;
+        min-height: 54px;
+        border-top: 1px solid rgba(255, 255, 255, 0.30);
+        border-left: transparent;
+    }
+
+    .nav__item:last-child {
+        border-right: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    }
+
+    .nav__link {
+        min-height: 54px;
+        justify-content: normal; 
+    }
+
+    .nav__link_burger {
+        color: #fff;
+        font-size: 20px;
+        font-family: "TrajanPro3";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 
     .stop-scroll {
@@ -785,7 +841,8 @@
         transform: translateX(14%);
     }
 
-    .btn__close::before {
+    .btn__close::before,
+    .btn__secondmenu::before {
         content: "";
         position: absolute;
         top: -5px;
@@ -799,13 +856,20 @@
     }
     
     .burger:focus,
-    .btn__close:focus {
+    .btn__close:focus,
+    .btn__secondmenu:focus {
         outline: none;
     }
     
-    .btn__close:focus::before {
+    .btn__close:focus::before,
+    .btn__secondmenu:focus::before {
         opacity: 1;
     }
+
+    .btn__close:active svg path,
+    .btn__secondmenu:active svg path {
+        fill: var(--hover-color);
+    } 
     
     .burger:focus .burger__line:nth-child(2) {
         transform: translateX(-50%) translateY(-50%);
@@ -1165,6 +1229,14 @@
         top: 475px;
         width: 60px;
         background-image: url(./img/arrow576.svg);
+    }
+
+    .swiper-button-next:active {
+        background-image: url(./img/arrow576hover.svg);
+    }
+
+    .swiper-button-prev:active {
+        background-image: url(./img/arrow576hover.svg);
     }
 
     .articles__articles {
