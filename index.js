@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.nav');
     const servicesBtnLinks = document.querySelectorAll('.services__btn');
     const btnCloseMenu = document.querySelector('.btn__close');
+    const btnSwitchMenu = document.querySelector('.btn__secondmenu');
+    const secondMenu = document.querySelector('.nav-second');
+    const btnCloseSecondMenu = document.querySelector('.btn__close_second');
+    const btnSwitchBack = document.querySelector('.btn-switchmenu');
     
 
     /* Свайпер*/
@@ -147,31 +151,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /*burger*/
-    burger.addEventListener('click', () => {
+    burger.addEventListener('click', (e) => {
         menu.classList.add('nav__active');
         document.body.classList.add('stop-scroll');
+        e._isClickWithInMenu = true;
       });
       
     /* Menu */
     function closeMenu() {
         menu.classList.remove('nav__active');
-        document.body.classList.remove('stop-scroll');   
+        document.body.classList.remove('stop-scroll');
+        secondMenu.classList.remove('nav__active_second');   
     }
 
-    btnCloseMenu.addEventListener('click', () => {
+    btnCloseMenu.addEventListener('click', (e) => {
         closeMenu(); 
+    });
+
+    btnCloseSecondMenu.addEventListener('click', (e) => {
+        closeMenu(); 
+    });
+
+    btnSwitchMenu.addEventListener('click', () => {
+        secondMenu.classList.add('nav__active_second');
+    });
+
+    btnSwitchBack.addEventListener('click', () => {
+        secondMenu.classList.remove('nav__active_second');
+    });
+
+    document.querySelector('.nav').addEventListener('click', (e) => {
+        e._isClickWithInMenu = true;
+    });
+
+    document.querySelector('.nav-second').addEventListener('click', (e) => {
+        e._isClickWithInMenu = true;
     });
 
     
     document.body.addEventListener('click', (e) => {
-        const nav = document.querySelector('.nav__active');
-        let target = e.target;
-        const burgerClick = target.closest('.burger');
-        if (nav) {
-          let navClick = target == nav || nav.contains(target) || burgerClick;
-            if (!navClick) {
-                closeMenu();
-            }   
-        }
+        if (e._isClickWithInMenu) return;
+        closeMenu();    
     });
 });

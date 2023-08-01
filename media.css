@@ -713,7 +713,8 @@
         margin-right: auto;
     }
 
-    .nav {
+    .nav,
+    .nav-second {
         position: absolute;
         right: 0;
         top: 0;
@@ -728,6 +729,11 @@
         visibility: hidden;
         transform: translateX(120%);
         transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .nav-second {
+        display: block;
+        z-index: 60;
     }
     
     .burger {
@@ -746,7 +752,13 @@
         transform: none;
     }
 
-    .for-burger {
+    .nav__active_second {
+        visibility: visible;
+        transform: none;
+    }
+
+    .for-burger,
+    .for-burger_second {
         position: relative;
         display: flex;
         align-items: center;
@@ -759,10 +771,16 @@
         margin-bottom: 50px;
     }
 
-    .btn__close {
+    .btn__close,
+    .btn__close_second {
         position: absolute;
         right: 3px;
 
+    }
+
+    .btn-switchmenu {
+        position: absolute;
+        left: 3px;
     }
 
     .for-burger__socials {
@@ -811,6 +829,24 @@
         line-height: normal;
     }
 
+    .nav-second_name {
+        position: relative; 
+    }
+
+    .nav-second_number {
+        position: absolute;
+        top: -3px;
+        right: -69px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: var(--hover-color);
+        transition: color 0.3s ease-in-out;
+    }
+
     .stop-scroll {
         overflow: hidden;
     }
@@ -842,7 +878,9 @@
     }
 
     .btn__close::before,
-    .btn__secondmenu::before {
+    .btn__close_second::before,
+    .btn__secondmenu::before,
+    .btn-switchmenu::before {
         content: "";
         position: absolute;
         top: -5px;
@@ -857,17 +895,23 @@
     
     .burger:focus,
     .btn__close:focus,
-    .btn__secondmenu:focus {
+    .btn__secondmenu:focus,
+    .btn__close_second:focus,
+    .btn-switchmenu:focus {
         outline: none;
     }
     
     .btn__close:focus::before,
-    .btn__secondmenu:focus::before {
+    .btn__secondmenu:focus::before,
+    .btn__close_second:focus::before,
+    .btn-switchmenu:focus::before {
         opacity: 1;
     }
 
     .btn__close:active svg path,
-    .btn__secondmenu:active svg path {
+    .btn__secondmenu:active svg path,
+    .btn__close_second:active svg path,
+    .btn-switchmenu:active svg path  {
         fill: var(--hover-color);
     } 
     
@@ -906,12 +950,12 @@
 
     .swiper-button-prev {
         top: 413px;
-        left: 0;
+        left: 1px;
     }
 
     .swiper-button-next {
         top: 413px;
-        right: 0;
+        right: 1px;
     }
 
     .btn-radius {
@@ -1085,7 +1129,7 @@
 
     .swiper-slide {
         padding-top: 230px;
-        background: url(./img/slider1.svg) no-repeat center top -183px / 34% 111%;
+        background: url(./img/slider1.svg) no-repeat center top -183px / 34% 112%;
     }
 
     .text {
@@ -1212,7 +1256,7 @@
     }
 
     .swiper-slide {
-        background: url(./img/slider1.svg) no-repeat center top -174px / 45% 111%;
+        background: url(./img/slider1.svg) no-repeat center top -174px / 45% 112%;
     }
 
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -1252,7 +1296,7 @@
     }
 
     .any-questions__content {
-        padding-top: 450px;
+        padding-top: 552px;
         justify-content: center;
     }
 
@@ -1274,7 +1318,7 @@
 
     .swiper-slide {
         padding-top: 225px;
-        background: url(./img/slider1.svg) no-repeat center top -187px / 58% 111%;
+        background: url(./img/slider1.svg) no-repeat center top -187px / 52% 115%;
     }
 
     .benefits {
@@ -1310,7 +1354,6 @@
 
     .benefits::before {
         bottom: -84px;
-        background: url(./img/benefits480.svg) no-repeat top 6px center/ cover;
     }
 
     .benefits__link-1 {
@@ -1439,7 +1482,7 @@
     }
 
     .any-questions__content {
-        padding-top: 381px;
+        padding-top: 455px;
     }
 
     .checkbox {
@@ -1476,9 +1519,18 @@
 }
 
 @media (max-width: 385px) {
+    .swiper-slide {
+        padding-top: 225px;
+        background: url(./img/slider1.svg) no-repeat center top -187px / 58% 111%;
+    }
+
     .articles::before {
         top: 29px;
         bottom: -221px;
         background: url(./img/articles480.svg) no-repeat top center/ cover;
+    }
+
+    .any-questions__content {
+        padding-top: 381px;
     }
 }
