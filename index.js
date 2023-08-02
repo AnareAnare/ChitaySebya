@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnCloseSecondMenu = document.querySelector('.btn__close_second');
     const btnSwitchBack = document.querySelector('.btn-switchmenu');
     
+    
 
     /* Свайпер*/
     const swiper = new Swiper('.swiper', {
@@ -188,9 +189,17 @@ document.addEventListener('DOMContentLoaded', () => {
         e._isClickWithInMenu = true;
     });
 
-    
     document.body.addEventListener('click', (e) => {
         if (e._isClickWithInMenu) return;
         closeMenu();    
     });
+
+    if (document.querySelector('.nav-second')) {
+        const menuLinks = document.querySelectorAll('.nav__link');
+        menuLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+    }
 });
