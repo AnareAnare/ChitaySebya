@@ -109,9 +109,9 @@ a {
 }
 
 .container {
-    max-width: 1432px;
+    max-width: 1512px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
 .onearticle__container {
@@ -130,20 +130,15 @@ a {
     grid-area: aside;
 }
 
-.section-back {
-    margin-bottom: 17px;
+.section-back__onearticle {
+    margin-bottom: 22px;
     color: #FFF;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     font-family: "TrajanPro3";
     font-style: normal;
     font-weight: 600;
     line-height: 140.4%; 
-}
-
-.section-back__onearticle {
-    margin-bottom: 22px;
-    text-align: left;
 }
 
 .oa-title {
@@ -472,6 +467,7 @@ tbody tr:nth-child(even) {
 
 .oa-tags__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
