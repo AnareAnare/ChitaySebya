@@ -78,13 +78,13 @@ a {
 }
 
 .container {
-    max-width: 1432px;
+    max-width: 1512px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
-.section-back {
-    margin-bottom: 17px;
+.c-section-back {
+    margin-bottom: 10px;
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -95,7 +95,7 @@ a {
 }
 
 .c-title {
-    margin-bottom: 54px;
+    margin-bottom: 75px;
     text-align: center;
     font-size: 52px;
     font-family: "TrajanPro3";
@@ -103,10 +103,6 @@ a {
     font-weight: 600;
     line-height: 140.4%;
     color: #FFF;
-}
-
-.c-title__contacts {
-    margin-bottom: 75px;
 }
 
 .c-contacts {
@@ -236,4 +232,45 @@ a {
 
 .c-contacts__mail:active {
     color: var(--hover-color);
+}
+
+@media (max-width: 1160px) {
+    .container {
+        padding: 0 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .c-section-back {
+        margin-bottom: 20px;
+    }
+
+    .c-title {
+        margin-bottom: 33px;
+        font-size: 24px; 
+    }
+
+    .c-contacts__email {
+        margin-bottom: 47px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .c-section-back {
+        font-size: 14px;
+    }
+
+    .c-title {
+        margin-bottom: 29px;
+    }
+
+    .c-contacts__email {
+        margin-bottom: 44px;
+    }
 }
