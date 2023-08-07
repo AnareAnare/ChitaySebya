@@ -114,6 +114,10 @@ a {
     padding: 0 50px;
 }
 
+.aside__img_active {
+    transform: scale(1.2);
+}
+
 .onearticle__container {
     display: grid;
     gap: 143px;

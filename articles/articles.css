@@ -302,7 +302,7 @@ a {
 }
 
 .articles__link:focus img {
-    transform: scale(120%);
+    transform: scale(1.2);
 }
 
 .articles__link:focus .ar-title {
@@ -316,7 +316,7 @@ a {
 
 @media (min-width: 1025px) {
     .articles__link:hover img {
-        transform: scale(120%);
+        transform: scale(1.2);
     }
 
     .articles__link:hover .ar-title {

@@ -1,3 +1,9 @@
+@media (min-width: 1921px) {
+    .benefits::before {
+        bottom: -400px; 
+    }
+}
+
 @media (max-width: 1680px) {
     .main-title {
         font-size: 40px;
